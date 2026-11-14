@@ -27,7 +27,7 @@ export function RewardCardsShowcase() {
               Interactive 3D PayPal &amp; Cash App Reward Concepts
             </h2>
             <p className="mt-2.5 text-sm leading-relaxed text-slate-300 sm:text-base">
-              Select any card below to visit the verified promotional offer page. All cards shown are illustrative promotional designs only—not issued or redeemable gift cards.
+              Select any card below to visit the third-party sponsor's offer page and review its terms. All cards shown are illustrative promotional designs only—not issued or redeemable gift cards.
             </p>
           </div>
 
