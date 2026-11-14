@@ -34,10 +34,10 @@ export function Footer() {
         <div className="flex flex-col justify-between gap-6 border-b border-white/10 pb-8 md:flex-row md:items-center">
           <div>
             <p className="font-display text-base font-bold text-white">
-              US Rewards Spotlight
+              Gift Drop USA
             </p>
             <p className="mt-1 text-xs text-slate-400">
-              Independent Promotional Showcase · US Residents 18+ Only
+              Independent promotional information site · Review sponsor eligibility before participating
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export function Footer() {
 
         <div className="mt-6 space-y-2 text-xs leading-relaxed text-slate-400">
           <p>
-            Important Disclosure: All 3D PayPal and Cash App cards displayed on this website are illustrative promotional designs only and are not issued, active, or redeemable gift cards. This is an independent promotion and is not affiliated with, sponsored by, or endorsed by PayPal, Inc. or Block, Inc. (Cash App). PayPal® and Cash App® are registered trademarks of their respective owners. Entry does not guarantee a reward; actual eligibility requirements and sponsor terms are displayed only upon verification. Never share your account passwords or banking credentials.
+            Important Disclosure: All 3D PayPal and Cash App cards displayed on this website are illustrative promotional designs only and are not issued, active, or redeemable gift cards. This is an independent promotion and is not affiliated with, sponsored by, or endorsed by PayPal, Inc. or Block, Inc. (Cash App). PayPal® and Cash App® are registered trademarks of their respective owners. Entry does not guarantee a reward; check the sponsor's destination page for current eligibility requirements and full terms. Never share your account passwords or banking credentials.
           </p>
           <p>
             © {new Date().getFullYear()} US Rewards Spotlight. All rights reserved.
