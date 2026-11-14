@@ -71,7 +71,7 @@ export function Footer() {
             Important Disclosure: All 3D PayPal and Cash App cards displayed on this website are illustrative promotional designs only and are not issued, active, or redeemable gift cards. This is an independent promotion and is not affiliated with, sponsored by, or endorsed by PayPal, Inc. or Block, Inc. (Cash App). PayPal® and Cash App® are registered trademarks of their respective owners. Entry does not guarantee a reward; check the sponsor's destination page for current eligibility requirements and full terms. Never share your account passwords or banking credentials.
           </p>
           <p>
-            © {new Date().getFullYear()} US Rewards Spotlight. All rights reserved.
+            © {new Date().getFullYear()} Gift Drop USA. All rights reserved.
           </p>
         </div>
       </div>
