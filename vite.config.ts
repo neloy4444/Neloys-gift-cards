@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // GitHub Pages serves this repository under /Neloys-gift-cards/.
-    base: '/Neloys-gift-cards/',
+    // Use the root path on Vercel and the repository subpath on GitHub Pages.
+    base: process.env.VERCEL ? '/' : '/Neloys-gift-cards/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
