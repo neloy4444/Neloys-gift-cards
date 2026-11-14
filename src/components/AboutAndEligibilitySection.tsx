@@ -81,7 +81,7 @@ export function AboutAndEligibilitySection() {
                 Who Can Participate
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                Basic qualification standards apply before full sponsor offer terms are unlocked.
+                The sponsor may apply qualification standards. Review the full offer terms on its destination page before submitting any information.
               </p>
 
               <ul className="mt-6 space-y-4">

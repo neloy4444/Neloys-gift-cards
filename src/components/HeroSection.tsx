@@ -73,18 +73,18 @@ export function HeroSection() {
             className="text-center lg:col-span-7 lg:text-left"
           >
             <p className="mb-4 text-xs font-semibold tracking-wider text-sky-300 uppercase sm:text-sm">
-              Independent US Promotional Showcase
+              Gift Drop USA · Independent Promotional Information
             </p>
 
             <h1
               className="font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.35rem] lg:leading-[1.08]"
               style={{ textWrap: 'balance' }}
             >
-              You Might Be the Next to Get a $100 PayPal Gift Card!
+              Explore Promotional Reward Opportunities
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-slate-200 sm:text-lg lg:mx-0">
-              Explore featured PayPal and Cash App promotional reward concepts for eligible United States residents. Simple registration—click below or select any 3D card to check eligibility.
+              Explore illustrative PayPal- and Cash App-themed reward concepts. Follow the link to review the independent sponsor’s current offer details, eligibility rules, and requirements before deciding whether to participate.
             </p>
 
             {/* Trust Highlights (Zero-Pill Unboxed Row) */}

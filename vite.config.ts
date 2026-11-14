@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // GitHub Pages serves this repository under /Neloys-gift-cards/.
+    base: '/Neloys-gift-cards/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

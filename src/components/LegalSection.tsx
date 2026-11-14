@@ -33,7 +33,7 @@ export function LegalSection() {
                   1. Information Practices on This Landing Page
                 </h4>
                 <p className="mt-1">
-                  This promotional page does not collect, store, or request PayPal passwords, Cash App PINs, banking credentials, Social Security numbers, or payment card information. Clicking any 3D card or CTA button redirects you to the sponsor&apos;s verified registration environment.
+                  This promotional page does not collect, store, or request PayPal passwords, Cash App PINs, banking credentials, Social Security numbers, or payment card information. Clicking any 3D card or CTA button redirects you to the third-party sponsor's website.
                 </p>
               </div>
 
@@ -51,7 +51,7 @@ export function LegalSection() {
                   3. Data Protection &amp; Opt-Out Rights
                 </h4>
                 <p className="mt-1">
-                  United States residents may exercise applicable state privacy rights directly through the contact and opt-out controls provided by the verified offer sponsor before submitting registration details.
+                  United States residents may exercise applicable state privacy rights directly through the contact and opt-out controls provided by the third-party sponsor before submitting registration details.
                 </p>
               </div>
             </div>
@@ -93,7 +93,7 @@ export function LegalSection() {
                   3. Eligibility &amp; Sponsor Terms
                 </h4>
                 <p className="mt-1">
-                  Open only to legal United States residents aged 18 or older. Actual eligibility criteria, official sponsor rules, and offer terms are presented only upon verification on the sponsor page. Void where prohibited by law.
+                  Open only to legal United States residents aged 18 or older. Actual eligibility criteria, official sponsor rules, and offer terms are available on the sponsor's destination page; review them before participating. Void where prohibited by law.
                 </p>
               </div>
             </div>
