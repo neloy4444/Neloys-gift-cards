@@ -21,7 +21,7 @@ export function Navbar() {
           href="#top"
           className="font-display text-base font-bold tracking-tight text-white whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-400 sm:text-lg"
         >
-          US Rewards Spotlight
+          Gift Drop USA
         </a>
 
         {/* Zone 2: 5 concise single-line nav links */}
