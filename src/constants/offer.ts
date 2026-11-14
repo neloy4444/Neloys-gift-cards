@@ -29,7 +29,7 @@ export const PROMO_CARDS: PromoCardSpec[] = [
     subtitle: 'Digital Reward Concept',
     caption: 'Illustrative promotional design · Not an issued or redeemable gift card',
     description:
-      'Review the sponsor's offer page for current eligibility and details about Cash App-inspired $100 promotional reward opportunities.',
+      "Review the sponsor's offer page for current eligibility and details about Cash App-inspired $100 promotional reward opportunities.",
   },
   {
     id: 'cashapp-50',
@@ -68,7 +68,7 @@ export const HOW_IT_WORKS_STEPS: HowItWorksStep[] = [
     number: '03',
     title: 'Complete Sponsor Entry Steps',
     description:
-      'Follow the instructions and review all requirements presented on the sponsor's destination page. Entry provides a chance for consideration and does not guarantee a reward.',
+      "Follow the instructions and review all requirements presented on the sponsor's destination page. Entry provides a chance for consideration and does not guarantee a reward.",
     note: 'No account passwords needed',
   },
 ];
@@ -93,7 +93,7 @@ export const ELIGIBILITY_REQUIREMENTS: EligibilityItem[] = [
   },
   {
     label: 'Sponsor Terms & Conditions',
-    detail: 'Read the sponsor's full terms, participation requirements, and reward conditions on the destination page before taking part.',
+    detail: "Read the sponsor's full terms, participation requirements, and reward conditions on the destination page before taking part.",
   },
   {
     label: 'One Entry Per Individual',
@@ -113,6 +113,12 @@ export const FAQ_ITEMS: FaqItem[] = [
     question: 'Is this promotion officially affiliated with PayPal or Cash App?',
     answer:
       'No. This is an independent promotional website. PayPal® is a registered trademark of PayPal, Inc., and Cash App® is a registered trademark of Block, Inc. Neither PayPal, Inc. nor Block, Inc. sponsors, endorses, or administers this promotional campaign.',
+  },
+  {
+    id: 'affiliate-disclosure',
+    question: 'Does Gift Drop USA earn money from these links?',
+    answer:
+      "Gift Drop USA may receive compensation when a visitor follows an affiliate link and completes an eligible action with the third-party sponsor. The sponsor controls its own offer availability, qualification rules, and any reward decisions. Review all terms before participating.",
   },
   {
     id: 'illustrative-cards',
