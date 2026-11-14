@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neloy4444.github.io/Neloys-gift-cards/sitemap.xml
+Sitemap: https://neloys-gift-cards.vercel.app/sitemap.xml
