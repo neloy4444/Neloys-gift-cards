@@ -1,0 +1,8 @@
+{
+  "name": "Remix US Rewards Spotlight — $100 PayPal Gift Card Promotion",
+  "description": "Independent promotional landing page for a chance to win a $100 PayPal Gift Card for eligible US residents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
