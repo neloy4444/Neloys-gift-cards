@@ -1,5 +1,3 @@
-let lockerLoadPromise: Promise<void> | null = null;
-
 declare global {
   interface Window {
     b_C?: () => void;
@@ -8,43 +6,14 @@ declare global {
 }
 
 /**
- * Loads the AdBlueMedia locker only after a visitor explicitly clicks an offer CTA.
- * If the third-party script cannot load, the caller can fall back to the sponsor URL.
+ * Opens the AdBlueMedia Content Locker from a direct user click.
+ * The official dashboard snippet is loaded from index.html in the document head.
  */
-export async function openAdBlueMediaLocker(): Promise<void> {
-  if (typeof window === 'undefined') {
-    throw new Error('Content Locker is only available in a browser.');
+export function openAdBlueMediaLocker(): void {
+  if (typeof window === 'undefined' || typeof window.b_C !== 'function') {
+    throw new Error('AdBlueMedia Content Locker is not available.');
   }
 
-  if (typeof window.b_C === 'function') {
-    window.b_C();
-    return;
-  }
-
-  if (!lockerLoadPromise) {
-    lockerLoadPromise = new Promise<void>((resolve, reject) => {
-      window.rPGvN_bLP_TMiTQc = { it: 4642349, key: 'ad0c6' };
-
-      const script = document.createElement('script');
-      script.src = 'https://d18k3i06xdslhs.cloudfront.net/5510924.js';
-      script.async = true;
-      script.onload = () => {
-        if (typeof window.b_C === 'function') resolve();
-        else reject(new Error('AdBlueMedia locker function was not initialized.'));
-      };
-      script.onerror = () => reject(new Error('AdBlueMedia locker script failed to load.'));
-      document.head.appendChild(script);
-    }).catch((error) => {
-      lockerLoadPromise = null;
-      throw error;
-    });
-  }
-
-  await lockerLoadPromise;
-
-  if (typeof window.b_C !== 'function') {
-    throw new Error('AdBlueMedia locker function is unavailable.');
-  }
-
+  // Keep this synchronous so browsers do not block the locker as a popup.
   window.b_C();
 }
