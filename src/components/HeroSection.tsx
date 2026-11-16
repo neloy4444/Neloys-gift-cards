@@ -115,9 +115,11 @@ export function HeroSection() {
                 href={OFFER_URL}
                 onClick={(event) => {
                   event.preventDefault();
-                  void openAdBlueMediaLocker().catch(() => {
+                  try {
+                    openAdBlueMediaLocker();
+                  } catch {
                     window.location.assign(OFFER_URL);
-                  });
+                  }
                 }}
                 target="_blank"
                 rel="sponsored nofollow noopener noreferrer"
