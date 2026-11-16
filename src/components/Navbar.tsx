@@ -16,15 +16,12 @@ export function Navbar() {
   return (
     <header className="relative z-40 w-full border-b border-white/10 bg-[#051537]/95 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
-        {/* Zone 1: Single-element brand wordmark */}
         <a
           href="#top"
           className="font-display text-base font-bold tracking-tight text-white whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-400 sm:text-lg"
         >
           Gift Drop USA
         </a>
-
-        {/* Zone 2: 5 concise single-line nav links */}
         <nav
           aria-label="Primary navigation"
           className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-200"
@@ -39,18 +36,15 @@ export function Navbar() {
             </a>
           ))}
         </nav>
-
-        {/* Zone 3: 1 primary action + mobile menu trigger */}
         <div className="flex items-center gap-3 shrink-0">
           <a
             href={OFFER_URL}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="inline-flex min-h-10 items-center justify-center rounded-lg bg-[#0070BA] px-4 py-2 text-xs font-semibold tracking-wide text-white shadow-sm transition-colors duration-150 hover:bg-[#0086DE] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300 sm:text-sm"
           >
-            Claim Chance →
+            Review Offer →
           </a>
-
           <button
             type="button"
             onClick={() => setMobileOpen((prev) => !prev)}
@@ -62,8 +56,6 @@ export function Navbar() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Navigation Drawer */}
       {mobileOpen && (
         <nav
           aria-label="Mobile navigation"

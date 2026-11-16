@@ -126,7 +126,7 @@ export function InteractiveCard3D({
         <motion.a
           href={OFFER_URL}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
           aria-label={`Explore $${amountValue} ${brandTitle} illustrative promotional offer (opens in new tab)`}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
