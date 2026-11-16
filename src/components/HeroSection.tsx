@@ -5,9 +5,9 @@ import { FloatingParticles } from './FloatingParticles';
 import { PayPalGiftCard } from './PayPalGiftCard';
 
 const TRUST_HIGHLIGHTS = [
-  { icon: Zap, label: 'Simple Entry' },
-  { icon: Lock, label: 'Secure & Private' },
-  { icon: Flag, label: 'US Residents Only' },
+  { icon: Zap, label: 'Review Offer Steps' },
+  { icon: Lock, label: 'Check Privacy Terms' },
+  { icon: Flag, label: 'US Eligibility' },
 ];
 
 export function HeroSection() {
@@ -70,7 +70,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-            className="text-center lg:col-span-7 lg:text-left"
+            className="hero-motion text-center lg:col-span-7 lg:text-left"
           >
             <p className="mb-4 text-xs font-semibold tracking-wider text-sky-300 uppercase sm:text-sm">
               Gift Drop USA · Independent Promotional Information
@@ -80,11 +80,11 @@ export function HeroSection() {
               className="font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.35rem] lg:leading-[1.08]"
               style={{ textWrap: 'balance' }}
             >
-              Explore Promotional Reward Opportunities
+              Review a $100 PayPal Gift Card Offer in the USA
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-slate-200 sm:text-lg lg:mx-0">
-              Explore illustrative PayPal- and Cash App-themed reward concepts. Follow the link to review the independent sponsor’s current offer details, eligibility rules, and requirements before deciding whether to participate.
+              Looking into a $100 PayPal gift card promotion? Gift Drop USA is an independent information site. Review the third-party sponsor’s current eligibility rules, required steps, privacy terms, and reward conditions before deciding whether to participate. PayPal- and Cash App-themed card designs on this page are illustrative only.
             </p>
 
             {/* Trust Highlights (Zero-Pill Unboxed Row) */}
@@ -121,13 +121,17 @@ export function HeroSection() {
                   className="animate-sheen pointer-events-none absolute inset-y-0 w-1/3 bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
                 <span className="relative z-10 whitespace-nowrap">
-                  CLAIM YOUR CHANCE →
+                  REVIEW SPONSOR OFFER →
                 </span>
               </a>
 
               <p className="mt-3.5 max-w-lg text-xs leading-relaxed text-slate-300">
-                Cards shown are illustrative promotional designs, not issued or redeemable gift cards. Entry does not guarantee a reward.
+                This link opens a third-party sponsor. Entry does not guarantee a reward; check the sponsor’s full terms first.
               </p>
+              <nav aria-label="Reward offer guides" className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-sky-200 underline underline-offset-4 lg:justify-start">
+                <a href="/guides/how-to-check-paypal-gift-card-offers/">How to check a $100 PayPal offer</a>
+                <a href="/guides/legitimate-gift-card-promotions/">Gift card promotion safety checklist</a>
+              </nav>
             </div>
           </motion.div>
 
@@ -136,7 +140,7 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.55, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5"
+            className="hero-motion lg:col-span-5"
           >
             <PayPalGiftCard />
           </motion.div>
