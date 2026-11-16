@@ -1,6 +1,7 @@
 import { Flag, Lock, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 import { OFFER_URL } from '../constants/offer';
+import { openAdBlueMediaLocker } from '../lib/contentLocker';
 import { FloatingParticles } from './FloatingParticles';
 import { PayPalGiftCard } from './PayPalGiftCard';
 
@@ -112,6 +113,12 @@ export function HeroSection() {
             <div className="mt-8 flex flex-col items-center lg:items-start">
               <a
                 href={OFFER_URL}
+                onClick={(event) => {
+                  event.preventDefault();
+                  void openAdBlueMediaLocker().catch(() => {
+                    window.location.assign(OFFER_URL);
+                  });
+                }}
                 target="_blank"
                 rel="sponsored nofollow noopener noreferrer"
                 className="cta-glow-button group relative inline-flex min-h-14 w-full max-w-sm items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-[#0066CC] via-[#0080FF] to-[#00A8E8] px-8 py-4 font-display text-base font-bold tracking-wide text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-300 sm:w-auto sm:min-w-[300px] sm:text-lg"
