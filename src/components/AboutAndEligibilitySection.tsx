@@ -108,7 +108,7 @@ export function AboutAndEligibilitySection() {
               <a
                 href={OFFER_URL}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-[#0070BA] px-5 py-3 font-display text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#0086DE] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300"
               >
                 Verify Eligibility &amp; Continue →
