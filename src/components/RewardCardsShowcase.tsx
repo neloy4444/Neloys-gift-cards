@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { OFFER_URL, PROMO_CARDS } from '../constants/offer';
+import { openAdBlueMediaLocker } from '../lib/contentLocker';
 import { InteractiveCard3D } from './InteractiveCard3D';
 
 export function RewardCardsShowcase() {
@@ -33,6 +34,12 @@ export function RewardCardsShowcase() {
 
           <a
             href={OFFER_URL}
+            onClick={(event) => {
+              event.preventDefault();
+              void openAdBlueMediaLocker().catch(() => {
+                window.location.assign(OFFER_URL);
+              });
+            }}
             target="_blank"
             rel="sponsored nofollow noopener noreferrer"
             className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-xl border border-sky-400/35 bg-[#0070BA]/20 px-5 py-2.5 font-display text-sm font-semibold text-sky-200 transition-colors duration-150 hover:bg-[#0070BA]/35 hover:text-white whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300"
@@ -82,6 +89,12 @@ export function RewardCardsShowcase() {
                 </p>
                 <a
                   href={OFFER_URL}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    void openAdBlueMediaLocker().catch(() => {
+                      window.location.assign(OFFER_URL);
+                    });
+                  }}
                   target="_blank"
                   rel="sponsored nofollow noopener noreferrer"
                   className="inline-flex min-h-10 items-center justify-center rounded-lg bg-white/10 px-4 py-2 font-display text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#0070BA] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300"
