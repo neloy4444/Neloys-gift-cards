@@ -21,7 +21,7 @@ export function Footer() {
           <a
             href={OFFER_URL}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="cta-glow-button inline-flex min-h-13 shrink-0 items-center justify-center rounded-xl bg-gradient-to-r from-[#0066CC] via-[#0080FF] to-[#00A8E8] px-7 py-3.5 font-display text-base font-bold tracking-wide text-white whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-300"
           >
             CLAIM YOUR CHANCE →
@@ -63,6 +63,14 @@ export function Footer() {
             <a href="#terms" className="transition-colors hover:text-white">
               Terms &amp; Conditions
             </a>
+          </nav>
+        </div>
+
+        <div className="mt-6 border-b border-white/10 pb-6">
+          <h2 className="text-sm font-semibold text-white">Free guides to evaluating reward offers</h2>
+          <nav aria-label="Reward safety guides" className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <a href="/guides/how-to-check-paypal-gift-card-offers/" className="text-sky-200 transition-colors hover:text-white hover:underline">How to check a $100 PayPal gift card offer</a>
+            <a href="/guides/legitimate-gift-card-promotions/" className="text-sky-200 transition-colors hover:text-white hover:underline">Legitimate gift card promotions checklist</a>
           </nav>
         </div>
 
