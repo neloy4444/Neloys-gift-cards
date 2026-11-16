@@ -127,7 +127,7 @@ export function InteractiveCard3D({
           href={OFFER_URL}
           target="_blank"
           rel="sponsored nofollow noopener noreferrer"
-          aria-label={`Explore $${amountValue} ${brandTitle} illustrative promotional offer (opens in new tab)`}
+          aria-label={`Enter: ${amountValue} ${brandTitle} illustrative reward concept (opens in new tab)`}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           whileHover={{ scale: 1.028 }}
