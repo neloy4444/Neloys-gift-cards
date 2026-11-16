@@ -36,9 +36,11 @@ export function RewardCardsShowcase() {
             href={OFFER_URL}
             onClick={(event) => {
               event.preventDefault();
-              void openAdBlueMediaLocker().catch(() => {
-                window.location.assign(OFFER_URL);
-              });
+              try {
+                  openAdBlueMediaLocker();
+                } catch {
+                  window.location.assign(OFFER_URL);
+                }
             }}
             target="_blank"
             rel="sponsored nofollow noopener noreferrer"
@@ -91,9 +93,11 @@ export function RewardCardsShowcase() {
                   href={OFFER_URL}
                   onClick={(event) => {
                     event.preventDefault();
-                    void openAdBlueMediaLocker().catch(() => {
-                      window.location.assign(OFFER_URL);
-                    });
+                    try {
+                  openAdBlueMediaLocker();
+                } catch {
+                  window.location.assign(OFFER_URL);
+                }
                   }}
                   target="_blank"
                   rel="sponsored nofollow noopener noreferrer"
